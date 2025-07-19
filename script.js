@@ -1,3 +1,4 @@
+// Lista completa de materias
 const materias = [
   { nombre: "ALGEBRA Y TRIGONOMETRIA", creditos: 4, requisitos: [], abre: ["CALCULO DIFERENCIAL", "FISICA I"] },
   { nombre: "BIOLOGIA CELULAR Y MOLECULAR", creditos: 3, requisitos: [], abre: ["BIOQUIMICA I"] },
@@ -13,6 +14,50 @@ const materias = [
   { nombre: "FUNDAMENTOS DE QUIMICA", creditos: 4, requisitos: ["INTRODUCCION A LA QUIMICA"], abre: ["QUIMICA INORGANICA"] },
   { nombre: "INGLES II", creditos: 2, requisitos: ["INGLES I"], abre: ["INGLES III"] },
   { nombre: "PRODUCCION TEXTUAL", creditos: 2, requisitos: ["LECTURA CRITICA"], abre: [] },
+
+  { nombre: "CALCULO INTEGRAL", creditos: 4, requisitos: ["CALCULO DIFERENCIAL"], abre: [] },
+  { nombre: "ENFOQUES PEDAGOGICOS Y DESARROLLO CURRICULAR", creditos: 3, requisitos: ["Historia de la educación y la pedagogía"], abre: [] },
+  { nombre: "FISICA II", creditos: 3, requisitos: ["FISICA I"], abre: ["FISICOQUIMICA"] },
+  { nombre: "FORMACION CIUDADANA PARA LA PAZ", creditos: 2, requisitos: [], abre: [] },
+  { nombre: "INGLES III", creditos: 2, requisitos: ["INGLES II"], abre: ["INGLES IV"] },
+  { nombre: "INVESTIGACION Y PRAXIS PEDAGOGICA", creditos: 0, requisitos: [], abre: [] },
+  { nombre: "QUIMICA INORGANICA", creditos: 4, requisitos: ["FUNDAMENTOS DE QUIMICA"], abre: ["QUIMICA ANALITICA I", "FISICOQUIMICA"] },
+
+  { nombre: "APRENDIZAJE E INTERVENCION PEDAGOGICA", creditos: 2, requisitos: ["DESARROLLO HUMANO Y EDUCACION"], abre: ["EVALUACION DEL APRENDIZAJE"] },
+  { nombre: "DIDACTICA DE LA QUIMICA", creditos: 2, requisitos: [], abre: [] },
+  { nombre: "ESTADISTICA", creditos: 3, requisitos: ["CALCULO DIFERENCIAL"], abre: [] },
+  { nombre: "FISICOQUIMICA", creditos: 3, requisitos: ["FISICA II", "QUIMICA INORGANICA"], abre: ["QUIMICA ORGANICA II"] },
+  { nombre: "INGLES IV", creditos: 2, requisitos: ["INGLES III"], abre: ["INGLES V"] },
+  { nombre: "PRACTICA PEDAGOGICA INVESTIGATIVA I", creditos: 3, requisitos: [], abre: ["PRACTICA PEDAGOGICA INVESTIGATIVA II"] },
+  { nombre: "QUIMICA ANALITICA I", creditos: 4, requisitos: ["QUIMICA INORGANICA"], abre: ["QUIMICA ANALITICA II", "QUIMICA ORGANICA I"] },
+
+  { nombre: "ENSEÑANZA BASADA EN PROBLEMAS", creditos: 2, requisitos: [], abre: [] },
+  { nombre: "EVALUACION DEL APRENDIZAJE", creditos: 3, requisitos: ["APRENDIZAJE E INTERVENCION PEDAGOGICA"], abre: [] },
+  { nombre: "INGLES V", creditos: 2, requisitos: ["INGLES IV"], abre: ["INGLES VI"] },
+  { nombre: "PRACTICA PEDAGOGICA INVESTIGATIVA II", creditos: 3, requisitos: ["PRACTICA PEDAGOGICA INVESTIGATIVA I"], abre: ["PRACTICA PEDAGOGICA INVESTIGATIVA III"] },
+  { nombre: "QUIMICA ANALITICA II", creditos: 4, requisitos: ["QUIMICA ANALITICA I"], abre: [] },
+  { nombre: "QUIMICA ORGANICA I", creditos: 4, requisitos: ["QUIMICA ANALITICA I"], abre: ["QUIMICA ORGANICA II"] },
+
+  { nombre: "EDUCACION INTERCULTURAL E INCLUSIVA", creditos: 2, requisitos: [], abre: [] },
+  { nombre: "ELECTIVA 1", creditos: 2, requisitos: [], abre: ["ELECTIVA 2"] },
+  { nombre: "INGLES VI", creditos: 2, requisitos: ["INGLES V"], abre: [] },
+  { nombre: "MEDIACIONES TECNOLOGICAS EN LA QUIMICA", creditos: 2, requisitos: [], abre: [] },
+  { nombre: "PRACTICA PEDAGOGICA INVESTIGATIVA III", creditos: 5, requisitos: ["PRACTICA PEDAGOGICA INVESTIGATIVA II"], abre: ["PRACTICA PEDAGOGICA INVESTIGATIVA IV"] },
+  { nombre: "QUIMICA ORGANICA II", creditos: 4, requisitos: ["QUIMICA ORGANICA I", "FISICOQUIMICA"], abre: ["BIOQUIMICA I", "QUIMICA SOSTENIBLE"] },
+
+  { nombre: "BIOQUIMICA I", creditos: 4, requisitos: ["BIOLOGIA CELULAR Y MOLECULAR", "QUIMICA ORGANICA II"], abre: ["BIOQUIMICA II"] },
+  { nombre: "ELECTIVA 2", creditos: 2, requisitos: ["ELECTIVA 1"], abre: ["ELECTIVA 3"] },
+  { nombre: "ESPECTROSCOPIA", creditos: 2, requisitos: [], abre: [] },
+  { nombre: "POLITICAS Y GESTION EDUCATIVA", creditos: 3, requisitos: [], abre: [] },
+  { nombre: "PRACTICA PEDAGOGICA INVESTIGATIVA IV", creditos: 5, requisitos: ["PRACTICA PEDAGOGICA INVESTIGATIVA III"], abre: ["PRACTICA PEDAGOGICA INVESTIGATIVA V"] },
+
+  { nombre: "BIOQUIMICA II", creditos: 4, requisitos: ["BIOQUIMICA I"], abre: [] },
+  { nombre: "DESARROLLO SOSTENIBLE Y EDUCACION", creditos: 2, requisitos: [], abre: [] },
+  { nombre: "ELECTIVA 3", creditos: 2, requisitos: ["ELECTIVA 2"], abre: [] },
+  { nombre: "PRACTICA PEDAGOGICA INVESTIGATIVA V", creditos: 6, requisitos: ["PRACTICA PEDAGOGICA INVESTIGATIVA IV"], abre: ["PRACTICA PROFESIONAL"] },
+  { nombre: "QUIMICA SOSTENIBLE", creditos: 3, requisitos: ["QUIMICA ORGANICA II"], abre: [] },
+
+  { nombre: "PRACTICA PROFESIONAL", creditos: 18, requisitos: ["PRACTICA PEDAGOGICA INVESTIGATIVA V"], abre: [] },
 ];
 
 const estadoMaterias = {};
